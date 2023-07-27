@@ -1,0 +1,67 @@
+.landing{
+    width: 100vw;
+    height: 100vh;
+    max-width: 100vw;
+    max-height: 100vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+}
+.landing .head{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.landing .head .image{
+    width: 36%;
+    height: 93%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.landing .head .image img{
+    width: 62%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.landing .head .name{
+    width: 100%;
+    height: 7%;
+    text-align:center ;
+    color: #505052;
+}
+.landing .head .name h2{
+    font-size: 1.2rem;
+    font-weight: 480;
+}
+.landing .tagline{
+    width: 100%;
+    /* height: 10%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+.landing .tagline h1{
+    font-size: 4.2rem;
+    font-weight: 600;
+    color: #1D1D1F;
+}
+.landing .tagline p{
+    font-size: 0.76rem;
+}
+.landing button{
+    width: 16%;
+    height: 8%;
+    border-radius: 25px;
+    color: white;
+    background-color: #0272FF;
+    margin-bottom: 0.3rem;
+    margin-top: 0.3rem;
+}
