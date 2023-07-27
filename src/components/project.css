@@ -47,7 +47,7 @@
     height: 50vh;
     background-color:#08083A;
     border-radius: 23px;
-    transition: 0.5s ease;
+    /* transition: 0.5s ease; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -72,6 +72,11 @@ transform: scale(1.06);
 cursor: pointer;
 }
 
+@media screen and (max-width:370px){
+    .project .text h1{
+        font-size: 3rem !important;
+    }
+}
 
 @media screen and (max-width:913px){
     .project{
@@ -119,7 +124,7 @@ cursor: pointer;
         height: 30vh;
         background-color:#08083A;
         border-radius: 23px;
-        transition: 0.5s ease;
+        /* transition: 0.5s ease; */
         display: flex;
         justify-content: center;
         align-items: center;

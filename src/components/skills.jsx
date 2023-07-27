@@ -7,26 +7,26 @@ import javascript from '../images/javascript.png';
 import Python from '../images/python.png';
 import Java from '../images/java.png';
 import clang from '../images/clang.png';
+import { motion } from 'framer-motion';
 const Skills = () => {
   return (
     <div className="skills">
-      {window.screen.width>913 ? (
           <div className="text">
-          <h2>Skills</h2>
-          <h1>Everything I use to</h1>
-          <h1>turn my ideas into</h1>
-          <h1>reality.</h1>
+          <h2 initial={{ opacity: 0, y: 150 }}
+        viewport={{ once: true }}
+        whileInView={{ opacity: 1, y: 0 }}>Skills</h2>
+          <h1 initial={{ opacity: 0, y: 150 }}
+        viewport={{ once: true }}
+        whileInView={{ opacity: 1, y: 0 }}>Everything I use to</h1>
+          <h1 initial={{ opacity: 0, y: 150 }}
+        viewport={{ once: true }}
+        whileInView={{ opacity: 1, y: 0 }}>turn my ideas into</h1>
+          <h1 initial={{ opacity: 0, y: 150 }}
+        viewport={{ once: true }}
+        whileInView={{ opacity: 1, y: 0 }}>reality.</h1>
       </div>
-      ):(
-        <div className="text">
-          <h2>Skills</h2>
-          <h1>Everything I use</h1>
-          <h1>to turn my ideas</h1>
-          <h1>into reality.</h1>
-      </div>
-      )}
         <div className="body">
-           <div className="tech">
+           <motion.div className="tech" initial={{scale:0}} viewport={{once:true}} whileInView={{opacity:1 , scale:1}}>
               <h1>TechStack</h1>
               <div className="boxes">
               <div className="box">
@@ -54,9 +54,9 @@ const Skills = () => {
                 <h2>Java</h2>
               </div>
            </div>
-           </div>
+           </motion.div>
            <div className="mid">
-           <div className="framework">
+           <motion.div className="framework" initial={{scale:0}} viewport={{once:true}} whileInView={{opacity:1 , scale:1}}>
             <h1>FrameWork</h1>
             <div className="boxes">
            <div className="box">
@@ -64,10 +64,10 @@ const Skills = () => {
                 <h2>React</h2>
               </div>
             </div>
-           </div>
-           <div className="libraries">
+           </motion.div>
+           <motion.div className="libraries" initial={{scale:0}} viewport={{once:true}} whileInView={{opacity:1 , scale:1}}>
             
-           </div>
+           </motion.div>
            </div>
            <div className="database">
            {/* <div className="box">
