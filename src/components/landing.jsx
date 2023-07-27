@@ -7,7 +7,7 @@ const Landing = () => {
   return (
     <div className="landing">
         <div className="head">
-        <motion.div className="image"  initial={{ opacity: 0, y: 350 }}
+        <motion.div className="image"  initial={{ opacity: 0, y: 140 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ type: "spring", duration: 0.6 }}>
             <img src={Cat} alt="" />

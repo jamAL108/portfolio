@@ -257,7 +257,7 @@ height: 5rem;
     }
     .skills .body .tech .boxes .box h2{
         font-size: 0.9rem;
-        opacity: 0.7;
+        opacity: 1;
         font-weight: 550;
         text-transform: uppercase;
     }
@@ -322,7 +322,7 @@ height: 5rem;
     }
     .skills .body .mid .framework .boxes .box h2{
         font-size: 0.9rem;
-        opacity: 0.7;
+        opacity: 1;
         font-weight: 550;
         text-transform: uppercase;
     }
