@@ -54,3 +54,18 @@
 .Nav button:hover{
     background-color: #0249B3;
 }
+
+@media screen and (max-width:913px) {
+    .Nav{
+        margin-left: 5vw;
+        margin-right: 5vw;
+        width: 90vw;
+        height: 2.5rem;
+        position: sticky;
+        top: 2.7%; 
+        box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
+        z-index: 999;
+        border-radius: 25px; 
+        backdrop-filter: blur(10px);
+    }
+}

@@ -10,12 +10,21 @@ import clang from '../images/clang.png';
 const Skills = () => {
   return (
     <div className="skills">
+      {window.screen.width>913 ? (
+          <div className="text">
+          <h2>Skills</h2>
+          <h1>Everything I use to</h1>
+          <h1>turn my ideas into</h1>
+          <h1>reality.</h1>
+      </div>
+      ):(
         <div className="text">
-            <h2>Skills</h2>
-            <h1>Everything I use to</h1>
-            <h1>turn my ideas into</h1>
-            <h1>reality.</h1>
-        </div>
+          <h2>Skills</h2>
+          <h1>Everything I use</h1>
+          <h1>to turn my ideas</h1>
+          <h1>into reality.</h1>
+      </div>
+      )}
         <div className="body">
            <div className="tech">
               <h1>TechStack</h1>

@@ -3,11 +3,19 @@ import './Aboutme.css';
 const Aboutme = () => {
   return (
     <div className='Aboutme'>
-         <div className="text">
+      {window.screen.width>913 ?(
+        <div className="text">
             <h2>About me</h2>
             <h1>My Tech Stack </h1>
             <h1>and Expertise</h1>
          </div>
+      ):(
+        <div className="text">
+        <h2>About me</h2>
+        <h1>My Tech Stack</h1>
+        <h1>and Expertise</h1>
+     </div>
+      )}
          <div className="body">
           <div className="left">
              <h1>MERN STACK Developer and a Passionate DATA SCIENTIST</h1>

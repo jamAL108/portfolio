@@ -17,8 +17,12 @@ const Landing = () => {
         <h1 className="h1">
             Developer & Programmer
         </h1>
+        {window.screen.width>913 ? (
         <p>inquisitive individual, constantly seeking out new and <br/>innovative practices to refine my skills and build cool <br/>stuff.</p>
-        </div>
+      ) : (
+        <p>inquisitive individual, constantly seeking out <br/>new and innovative practices to refine my skills <br/>and build cool stuff.</p>
+      )}
+              </div>
         <button>Find Out More <ArrowForwardIcon/></button>
     </div>
   )

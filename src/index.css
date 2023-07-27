@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
 body {
   margin: 0;
+  padding: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   min-width: 100vw;
@@ -10,7 +11,14 @@ body {
   overflow-x: hidden;
   font-family: "Inter",sans-serif;
 }
-
+@media screen and (max-width:913px) {
+   body,html{
+    font-size: 65%;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+   }
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
