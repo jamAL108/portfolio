@@ -46,26 +46,27 @@ const Contact = () => {
             x: { duration: 0.8, type: "spring", delay: 0.25 },
           }}>
                  <div className="up">
-                    <div className="box" id='linkedin'>
+                    <a href="https://linkedin.com/in/jamal-mydeen-09887924a" className="box" id='linkedin'>
                         <Linkedin className='icon'/>
                         <h2>LinkedIn</h2>
-                    </div>
-                    <div className="box" id='leetcode'>
+                    </a>
+                    <a href='http://leetcode.com/jamAL108' className="box" id='leetcode'>
                         <Leetcode className='icon'/>
                         <h2>Leetcode</h2>
-                    </div>
-                    <div className="box" id='github'>
+                    </a>
+                    <a href='https://github.com/jamAL108' className="box" id='github'>
                         <Github className='icon'/>
                         <h2>Github</h2>
-                    </div>
-                    <div className="box" id='twitter'>
+                    </a>
+                    <a href='https://twitter.com/Jamal_twts' className="box" id='twitter'>
                     <Twitter className='icon'/>
                         <h2>Twitter</h2>
-                        </div>
-                        <div className="box" id='whatsapp'>
+                        </a>
+                        <a 
+            href="https://wa.me/+919004013777" className="box" id='whatsapp'>
                         <Whatsapp className='icon'/>
                         <h2>whatsapp</h2>
-                       </div>
+                       </a>
               </div>
               <div className="button">
                 <button onClick={(e)=>copy()}>Copy my email</button>
