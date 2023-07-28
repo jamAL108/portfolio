@@ -1,5 +1,5 @@
 import React from 'react'
-import './project.css';
+import '../sass/project.scss';
 import { motion } from 'framer-motion'
 const Project = () => {
    // if()

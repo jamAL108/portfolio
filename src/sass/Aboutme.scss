@@ -1,23 +1,20 @@
+@import "mixin";
+
 .Aboutme{
     width: auto;
     height: auto;
     min-width: 100vw;
     min-height: 100vh;
     background-color:#F5F5F7;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    @include flex(column);
     gap: 7.6rem;
 }
 .Aboutme .text{
     margin-left: -8rem;
     width: 50%;
     height: 50%;
-    display: flex;
-    justify-content: center;
+    @include flex(column);
     align-items: flex-start;
-    flex-direction: column;
     margin-top: 7rem;
 }
 .Aboutme .text h2{
@@ -38,9 +35,7 @@
 .Aboutme .body{
     width: 90%;
     height: 70vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex(row);
     gap: 2%;
 }
 .Aboutme .body .left{
@@ -48,10 +43,7 @@
     width: 40%;
     height: 90%;
     border-radius: 26px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    @include flex(column);
     box-shadow: 0px 0px 5px -1px rgba(0,0,0,0.09);
     /* gap: 2%; */
 }
@@ -59,9 +51,7 @@
     width: 80%;
     text-align: left;
     height: 20%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex(row);
     font-weight: 600;
     font-size: 1.15rem;
 }
@@ -69,9 +59,7 @@
     width: 80%;
     height: 60%;
     text-align: left;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex(row);
     font-size: 0.9rem;
 }
 .Aboutme .body .right{
@@ -85,10 +73,7 @@
     background-color: white;
     border-radius: 20px;
     box-shadow: 0px 0px 5px -1px rgba(0,0,0,0.09);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    @include flex(column);
 }
 .Aboutme .body .right .box h1{
     font-size: 2.6rem;
@@ -125,20 +110,15 @@
         min-width: 100vw;
         min-height: 100vh;
         background-color:#F5F5F7;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
+        @include flex(column);
         gap: 3rem;
     }
     .Aboutme .text{
         margin-left: -1rem;
         width: 80%;
         height: 40%;
-        display: flex;
-        justify-content: center;
-        align-items: flex-start;
-        flex-direction: column;
+        text-align: left;
+        // @include flex(column);
         margin-top: 11rem;
     }
     .Aboutme .text h2{
@@ -149,16 +129,14 @@
         margin-bottom:1rem ;
     }
     .Aboutme .text h1{
+        text-align: left;
         font-size: 3.5rem;
     }
     .Aboutme .body{
         width: 90%;
         min-height: 0vh;
         height: auto;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
+        @include flex(column);
     }
     .Aboutme .body .left{
         background-color: white;
@@ -172,9 +150,7 @@
         width: 85%;
         text-align: left;
         height: 20%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex(row);
         font-weight: 600;
         font-size: 1.6rem;
     }
@@ -182,18 +158,13 @@
         width: 85%;
         height: 70%;
         text-align: left;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex(row);
         font-size: 1.4rem;
     }
     .Aboutme .body .right{
         width: 94%;
         height: auto;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
+        @include flex(column);
     }
     .Aboutme .body .right .box{
        width: 100%;

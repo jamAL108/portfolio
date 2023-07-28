@@ -1,5 +1,5 @@
 import React from 'react'
-import './Nav.css';
+import '../sass/Nav.scss';
 import  scroll  from '../scroll';
 const Nav = () => {
   return (

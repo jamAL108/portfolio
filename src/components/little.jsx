@@ -1,5 +1,5 @@
 import React from 'react'
-import './little.css';
+import '../sass/little.scss';
 import { motion } from "framer-motion";
 const Little = () => {
   return (

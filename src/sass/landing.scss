@@ -1,25 +1,18 @@
+@import "mixin";
 .landing{
     width: 100vw;
     height: 100vh;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    flex-direction: column;
+    @include flex(column);
 }
 .landing .head{
     width: 100%;
     height: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    @include flex(column);
 }
 .landing .head .image{
     width: 36%;
     height: 93%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex(row);
 }
 .landing .head .image img{
     width: 62%;
@@ -40,10 +33,7 @@
 .landing .tagline{
     width: 100%;
     /* height: 10%; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    @include flex(column);
     text-align: center;
 }
 .landing .tagline h1{
@@ -81,10 +71,7 @@ height: 90%;
     .landing .head{
         width: 100%;
         height: 40%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
+        @include flex(column);
         margin-bottom: -3rem;
     }
     .landing .head .image{
@@ -100,9 +87,7 @@ height: 90%;
         height: 35%;
         text-align:center;
         color: #505052;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex(row);
         margin-top: -2rem;
     }
     .landing .head .name h2{
@@ -112,10 +97,8 @@ height: 90%;
     .landing .tagline{
         width: 100%;
         height: 25%;
-        display: flex;
+        @include flex(column);
         justify-content: flex-start;
-        align-items: center;
-        flex-direction: column;
         text-align: center;
         margin-top: 0.5rem;
     }

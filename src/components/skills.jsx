@@ -1,5 +1,5 @@
 import React from 'react'
-import './skills.css';
+import '../sass/skills.scss';
 import html from '../images/html.png';
 import css from '../images/css.png';
 import rect from '../images/react.png';
@@ -26,7 +26,7 @@ const Skills = () => {
         whileInView={{ opacity: 1, y: 0 }}>reality.</h1>
       </div>
         <div className="body">
-           <motion.div className="tech" initial={{scale:0}} viewport={{once:true}} whileInView={{opacity:1 , scale:1}} transition={{type:"spring"}}>
+           <motion.div className="tech" initial={{scale:0}} viewport={{once:true}} whileInView={{opacity:1 , scale:1}} transition={{type:"tween"}}>
               <h1>TechStack</h1>
               <div className="boxes">
               <div className="box">

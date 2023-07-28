@@ -1,7 +1,7 @@
 import React from 'react'
 import Cat from '../images/cat.jpeg';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
-import './landing.css';
+import '../sass/landing.scss';
 import { motion } from "framer-motion";
 import scroll from '../scroll';
 const Landing = () => {
