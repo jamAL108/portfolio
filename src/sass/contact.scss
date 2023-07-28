@@ -454,7 +454,7 @@ background-image: linear-gradient(315deg, #000000 0%, #b82e1f 70%);
 }
 .contact  .body .right .button{
     width: 85%;
-    height: 10%;
+    height: 5rem;
 }
 .contact  .body .right .button button{
 border: none;
@@ -468,6 +468,7 @@ background-color: #0064ff;
   transition: 0.2s all;
   font-family: "Inter", sans-serif;
   font-size: 15px;
+  font-size: 1.5rem;
   @include flex(row);
   &:hover {
       background-color: #004fc5;
