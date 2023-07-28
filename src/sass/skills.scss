@@ -1,19 +1,23 @@
-@import "mixin";
 .skills{
     width: auto;
     height: auto;
     min-width: 100vw;
     min-height: 100vh;
     background-color:#F5F5F7;
-    align-items: flex-start;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     gap: 4rem;
 }
 .skills .text{
     margin-left: -5rem;
     width: 60%;
     height: 50%;
-    @include flex(column);
+    display: flex;
+    justify-content: center;
     align-items: flex-start;
+    flex-direction: column;
     margin-top: 7rem;
 }
 .skills .text h2{
@@ -34,7 +38,10 @@
 .skills .body{
     width: 90%;
     height: auto;
-    @include flex(column);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 .skills .body .tech{
     margin-bottom: 2rem;
@@ -42,8 +49,12 @@
     height: 42vh;
     background-color:  white;
     border-radius: 23px;
+    flex-direction: column;
     box-shadow: 0px 0px 5px -1px rgba(0,0,0,0.09);
-    @include flex(column);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     gap: 5%;
 }
 .skills .body .tech h1{
@@ -69,7 +80,10 @@
 .skills .body .tech .boxes .box{
    width: 100%;
    height: 80%;
-   @include flex(column);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
    gap: 1rem;
 }
 .skills .body .tech .boxes .box img{
@@ -87,8 +101,10 @@ height: 5rem;
 .skills .body .mid{
     width: 83%;
     height: 42vh;
-    @include flex(row);
-    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4rem;
     gap: 2%;
 }
 .skills .body .mid .framework{
@@ -96,8 +112,12 @@ height: 5rem;
     height: 100%;
     background-color: white;
     border-radius: 23px;
+    flex-direction: column;
     box-shadow: 0px 0px 5px -1px rgba(0,0,0,0.09);
-    @include flex(column);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     gap: 5%;
 }
 .skills .body .mid .framework  h1{
@@ -111,7 +131,7 @@ height: 5rem;
     align-items: center;
     opacity: 0.87;
 }
-.skills .body .mid .framework .boxes{
+.skills .body .mid .framework .boxes {
     width: 90%;
     height: 80%;
     display: grid;
@@ -123,7 +143,10 @@ height: 5rem;
 .skills .body .mid .framework .boxes .box{
    width: 100%;
    height: 80%;
-   @include flex(column);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
    gap: 1rem;
 }
 .skills .body .mid .framework .boxes .box img{
@@ -138,12 +161,17 @@ height: 5rem;
     font-weight: 450;
     text-transform: uppercase;
 }
-.skills .body .libraries{
-    width: 49%;
-    height: 100%;
-    background-color: white;
-    border-radius: 23px;
-}
+// .skills .body .libraries{
+//     width: 49%;
+//     height: 100%;
+//     background-color: white;
+//     border-radius: 23px;
+// }
+
+
+
+
+
 
 @media screen and (max-width:913px){
     .skills{
@@ -152,15 +180,20 @@ height: 5rem;
         min-width: 100vw;
         min-height: 100vh;
         background-color:#F5F5F7;
-        @include flex(column);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
         gap: 5rem;
     }
     .skills .text{
         margin-left: -1rem;
         width: 80%;
         height: 40%;
-        @include flex(column);
+        display: flex;
+        justify-content: center;
         align-items: flex-start;
+        flex-direction: column;
         margin-top: 11rem;
     }
     .skills .text h2{
@@ -176,7 +209,10 @@ height: 5rem;
     .skills .body{
         width: 85%;
         height: auto;
-        @include flex(column);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
     }
 
     .skills .body .tech{
@@ -185,8 +221,11 @@ height: 5rem;
         height: 35vh;
         background-color:  white;
         border-radius: 23px;
+        flex-direction: column;
         box-shadow: 0px 0px 5px -1px rgba(0,0,0,0.12);
-        @include flex(column);
+        display: flex;
+        justify-content: center;
+        align-items: center;
         gap: 5%;
     }
     .skills .body .tech h1{
@@ -211,7 +250,10 @@ height: 5rem;
     .skills .body .tech .boxes .box{
        width: 100%;
        height: 100%;
-       @include flex(column);
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       flex-direction: column;
        gap: 0.7rem;
     }
     .skills .body .tech .boxes .box img{
@@ -228,8 +270,11 @@ height: 5rem;
     .skills .body .mid{
         width: 100%;
         height: auto;
-        @include flex(column);
-        margin-bottom: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 4rem;
         gap: 4%;
     }
     .skills .body .mid .framework{
@@ -237,8 +282,12 @@ height: 5rem;
         height: 20vh;
         background-color: white;
         border-radius: 23px;
+        flex-direction: column;
         box-shadow: 0px 0px 5px -1px rgba(0,0,0,0.09);
-        @include flex(column);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
         gap: 5%;
         margin-bottom: 2rem;
     }
@@ -264,7 +313,10 @@ height: 5rem;
     .skills .body .mid .framework .boxes .box{
        width: 100%;
        height: 100%;
-       @include flex(column);
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       flex-direction: column;
        gap: 0.7rem;
     }
     .skills .body .mid .framework .boxes .box img{
@@ -278,12 +330,5 @@ height: 5rem;
         opacity: 1;
         font-weight: 550;
         text-transform: uppercase;
-    }
-    .skills .body .libraries{
-        width: 100%;
-        height: 20vh;
-        background-color: white;
-        border-radius: 23px;
-        margin-bottom: 2rem;
     }
 }

@@ -10,8 +10,8 @@ const Nav = () => {
         <h3 onClick={(e)=>scroll("Aboutme")}>About me</h3>
         <h3 onClick={(e)=>scroll("skills")}>Skills</h3>
         <h3 onClick={(e)=>scroll("project")}>My works</h3>
-        <h3 onClick={(e)=>scroll("Aboutme")}>Resume</h3>
-        <button>Contact</button>
+        <h3 onClick={(e)=>scroll("resume")}>Resume</h3>
+        <button onClick={(e)=>scroll("contact")}>Contact</button>
     </div>
   )
 }
