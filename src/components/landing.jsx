@@ -3,6 +3,7 @@ import Cat from '../images/cat.jpeg';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import './landing.css';
 import { motion } from "framer-motion";
+import scroll from '../scroll';
 const Landing = () => {
   return (
     <div className="landing">
@@ -38,7 +39,7 @@ const Landing = () => {
         <p>inquisitive individual, constantly seeking out <br/>new and innovative practices to refine my skills <br/>and build cool stuff.</p>
       )}
               </div>
-        <motion.button  initial={{ opacity: 0, y: 140 }}
+        <motion.button onClick={(e)=>scroll("Aboutme")} initial={{ opacity: 0, y: 140 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{
           delay: 0.7,

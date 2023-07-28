@@ -25,25 +25,25 @@ const Aboutme = () => {
           <div className="right">
             <motion.div className="box" id='b1' initial={{ scale:0}}
         viewport={{ once: true }}
-        whileInView={{ opacity: 1, scale: 1 }} >
+        whileInView={{ opacity: 1, scale: 1 }} transition={{ type: 'tween' }} >
               <h1>300<span>+</span></h1>
               <h2>Leetcode Solutions</h2>
             </motion.div>
             <motion.div className="box" initial={{ scale:0}}
         viewport={{ once: true }}
-        whileInView={{ opacity: 1, scale: 1 }}>
+        whileInView={{ opacity: 1, scale: 1 }} transition={{ type: 'tween' }}>
               <h1>10+</h1>
               <h2>Full stack project</h2>
             </motion.div>
             <motion.div className="box" initial={{ scale:0}}
         viewport={{ once: true }}
-        whileInView={{ opacity: 1, scale: 1 }}>
+        whileInView={{ opacity: 1, scale: 1 }} transition={{ type: 'tween' }}>
               <h1>5+</h1>
               <h2>ML project</h2>
             </motion.div>
             <motion.div className="box" initial={{ scale:0}}
         viewport={{ once: true }}
-        whileInView={{ opacity: 1, scale: 1 }}>
+        whileInView={{ opacity: 1, scale: 1 }} transition={{ type: 'tween' }}>
               <h1>100+</h1>
               <h2>Passion</h2>
             </motion.div>

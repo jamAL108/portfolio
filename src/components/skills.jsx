@@ -26,7 +26,7 @@ const Skills = () => {
         whileInView={{ opacity: 1, y: 0 }}>reality.</h1>
       </div>
         <div className="body">
-           <motion.div className="tech" initial={{scale:0}} viewport={{once:true}} whileInView={{opacity:1 , scale:1}}>
+           <motion.div className="tech" initial={{scale:0}} viewport={{once:true}} whileInView={{opacity:1 , scale:1}} transition={{type:"spring"}}>
               <h1>TechStack</h1>
               <div className="boxes">
               <div className="box">
@@ -56,7 +56,7 @@ const Skills = () => {
            </div>
            </motion.div>
            <div className="mid">
-           <motion.div className="framework" initial={{scale:0}} viewport={{once:true}} whileInView={{opacity:1 , scale:1}}>
+           <motion.div className="framework" initial={{scale:0}} viewport={{once:true}} whileInView={{opacity:1 , scale:1}} transition={{type:"tween"}}>
             <h1>FrameWork</h1>
             <div className="boxes">
            <div className="box">
@@ -65,7 +65,7 @@ const Skills = () => {
               </div>
             </div>
            </motion.div>
-           <motion.div className="libraries" initial={{scale:0}} viewport={{once:true}} whileInView={{opacity:1 , scale:1}}>
+           <motion.div className="libraries" initial={{scale:0}} viewport={{once:true}} whileInView={{opacity:1 , scale:1}} transition={{type:"tween"}}>
             
            </motion.div>
            </div>
