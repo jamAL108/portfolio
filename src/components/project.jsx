@@ -1,8 +1,22 @@
 import React from 'react'
 import '../sass/project.scss';
 import { motion } from 'framer-motion'
+import Metatunes from '../images/metatunes.jpg';
 const Project = () => {
-   // if()
+        // cosnt [activeElementId,setactiveelem] = useS
+        // function getActiveElementId(){
+                // get focused element's id
+                // activeId.innerText = activeElementId;  // update text of the span
+   
+//  document.addEventListener('mouseup', getActiveElementId);
+// // Listen to the keyup event
+// document.addEventListener('keyup', function(event){
+//     // check if key pressed is a TAB key
+//     if(event.key==='Tab'){
+//         getActiveElementId();  // call the function
+//     }
+// });
+
   return (
     <div className="project">
                 <div className="text">
@@ -19,18 +33,24 @@ const Project = () => {
 
 
          <div className="body">
-            <motion.div className="box" >coming soon!</motion.div>
+            <motion.div className="box" id='box1'>
+                <img src={Metatunes} alt="wer" />
+                {document.activeElement.id ==='#box1' &&(
+ <>
+ </>
+                )}
+            </motion.div>
             <motion.div className="box">coming soon!</motion.div>
             <motion.div className="box">coming soon!</motion.div>
             <motion.div className="box">coming soon!</motion.div>
          </div>
          <div className="show">
-            <motion.h1 initial={{ scale:0}}
+            <motion.a  href='https://github.com/jamAL108' initial={{ scale:0}}
         viewport={{ once: true }}
-        whileInView={{ opacity: 1, scale: 1 }}>show more</motion.h1>
+        whileInView={{ opacity: 1, scale: 1 }}>show more</motion.a>
          </div>
     </div>
   )
 }
 
-export default Project
+export default Project;
