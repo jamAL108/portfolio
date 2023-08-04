@@ -7,9 +7,11 @@ import Project from './components/project';
 import Skills from './components/skills';
 import Resume from './components/resume';
 import Contact from './components/contact';
+import { ToastContainer } from 'react-toastify';
 function App() {
   return (
     <>
+    <ToastContainer/>
     <Nav/>
     <Landing/>
     <Little/>
