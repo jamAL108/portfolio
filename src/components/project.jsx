@@ -42,7 +42,7 @@ const Project = () => {
                 )}
             </motion.div>
             <motion.div className="box">
-            <img src={MetatuDeepFakenes} alt="wer" />
+            <img src={DeepFake} alt="wer" />
             {document.activeElement.id ==='#box2' &&(
  <>
  </>
