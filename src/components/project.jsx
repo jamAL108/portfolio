@@ -2,6 +2,7 @@ import React from 'react'
 import '../sass/project.scss';
 import { motion } from 'framer-motion'
 import Metatunes from '../images/metatunes.jpg';
+import DeepFake from '../images/Deepfake.png'
 const Project = () => {
         // cosnt [activeElementId,setactiveelem] = useS
         // function getActiveElementId(){
@@ -40,7 +41,13 @@ const Project = () => {
  </>
                 )}
             </motion.div>
-            <motion.div className="box">coming soon!</motion.div>
+            <motion.div className="box">
+            <img src={MetatuDeepFakenes} alt="wer" />
+            {document.activeElement.id ==='#box2' &&(
+ <>
+ </>
+                )}
+            </motion.div>
             <motion.div className="box">coming soon!</motion.div>
             <motion.div className="box">coming soon!</motion.div>
          </div>
