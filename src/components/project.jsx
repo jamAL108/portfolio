@@ -1,8 +1,9 @@
 import React from 'react'
 import '../sass/project.scss';
 import { motion } from 'framer-motion'
-import Metatunes from '../images/metatunes.jpg';
+import Metatunes from '../images/metatune.png';
 import DeepFake from '../images/Deepfake.png'
+import Blog from '../images/Blog.png'
 const Project = () => {
         // cosnt [activeElementId,setactiveelem] = useS
         // function getActiveElementId(){
@@ -48,7 +49,12 @@ const Project = () => {
  </>
                 )}
             </motion.div>
-            <motion.div className="box">coming soon!</motion.div>
+            <motion.div className="box">           
+             <img src={Blog} alt="wer" />
+            {document.activeElement.id ==='#box3' &&(
+ <>
+ </>
+                )}</motion.div>
             <motion.div className="box">coming soon!</motion.div>
          </div>
          <div className="show">
