@@ -20,7 +20,7 @@ const Resume = () => {
           <div className="right">
           <h2>If you still have any questions,<br/> feel free to contact me. Additionally,<br/> you can download my resume below.</h2>
           <div className="buttons">
-            <a download="Jamal_Resume.pdf" href={require("../document/Jamal_resume_november.pdf")}>
+            <a download="Jamal_Resume.pdf" href={require("../document/November_resume.pdf")}>
               <button><GetAppIcon/>Download CV</button>
             </a>
             <button className='btn' onClick={(e)=>scroll("contact")}><ChatIcon/> Contact Me</button>
