@@ -4,21 +4,8 @@ import { motion } from 'framer-motion'
 import Metatunes from '../images/metatune.png';
 import DeepFake from '../images/Deepfake.png'
 import Blog from '../images/Blog.png'
+import codeQuest from '../images/codeQuest.png'
 const Project = () => {
-        // cosnt [activeElementId,setactiveelem] = useS
-        // function getActiveElementId(){
-                // get focused element's id
-                // activeId.innerText = activeElementId;  // update text of the span
-   
-//  document.addEventListener('mouseup', getActiveElementId);
-// // Listen to the keyup event
-// document.addEventListener('keyup', function(event){
-//     // check if key pressed is a TAB key
-//     if(event.key==='Tab'){
-//         getActiveElementId();  // call the function
-//     }
-// });
-
   return (
     <div className="project">
                 <div className="text">
@@ -49,13 +36,19 @@ const Project = () => {
  </>
                 )}
             </motion.div>
+            <motion.div className="box">
+            <img src={codeQuest} alt="wer" />
+            {document.activeElement.id ==='#box3' &&(
+ <>
+ </>
+                )}
+            </motion.div>
             <motion.div className="box">           
              <img src={Blog} alt="wer" />
             {document.activeElement.id ==='#box3' &&(
  <>
  </>
                 )}</motion.div>
-            <motion.div className="box">coming soon!</motion.div>
          </div>
          <div className="show">
             <motion.a  href='https://github.com/jamAL108' initial={{ scale:0}}
